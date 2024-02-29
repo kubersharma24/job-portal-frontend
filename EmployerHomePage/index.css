@@ -1,0 +1,224 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif; /* Optional: Adjust font family */
+    color: #333; /* Optional: Adjust text color */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Fixed background image */
+body {
+    background-image: url("https://wallpapers.com/images/featured/background-design-6tgpche84avnjqvz.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-clip: 10px; /* Apply blur effect */
+}
+
+/* Content wrapper */
+#mainDiv {
+    padding-top: 80px; /* Adjust according to header height */
+}
+
+/* Header */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px; /* Adjust height as needed */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: #fff; /* Header text color */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1000; /* Ensure header is above other content */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+}
+
+/* Application name */
+#appName {
+    font-size: 24px;
+}
+
+
+
+/* Username header */
+#usernameheader {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 60px; /* Adjust according to header height */
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: #fff;
+    backdrop-filter: blur(10px); /* Apply blur effect */
+}
+
+#mainDiv {
+    padding-top: 140px; /* Adjust according to header and username div height */
+}
+#userNamediv{
+    margin-top: 15px;
+}
+#logined-as{
+    margin-right: 30px;
+    margin-top: 15px;
+}
+
+/* Logout button */
+#logout {
+    cursor: pointer;
+    margin-right: 20px;
+    margin-left: auto;
+}
+/* Main body */
+#mainBody {
+    padding-top: 20px; /* Additional padding for spacing */
+}
+
+/* Card container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+}
+
+.card {
+    width: 600px; /* Set fixed width */
+    height: 300px; /* Set fixed height */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 16px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* Change flex direction to column */
+    align-items: flex-start; /* Align items to the start */
+}
+
+.card h2 {
+    margin-bottom: 10px; /* Add space below the title */
+}
+
+.details-div {
+    margin-left: auto; /* Push details to the right */
+    margin-top: 10px; /* Add space between title and details */
+}
+
+.view-button,
+.delete-button {
+    margin-top: auto; /* Align buttons to the bottom */
+    width: 100%; /* Make buttons occupy full width */
+}
+
+.view-button,
+.delete-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.view-button:hover,
+.delete-button:hover {
+    background-color: #0056b3;
+}
+
+/* Button colors */
+.applications-button {
+    background-color: #007bff; /* Blue */
+    color: #fff;
+}
+
+.delete-button {
+    background-color: #dc3545; /* Red */
+    color: #fff;
+}
+
+/* Button hover effect */
+.applications-button:hover,
+.delete-button:hover {
+    background-color: #0056b3; /* Darker blue */
+}
+
+#openCreateJobModal{
+    cursor: pointer;
+    position: fixed;
+    bottom:50px;
+    right: 50px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 40px;
+    background-color:rgba(198, 191, 191, 0.8);
+    backdrop-filter: blur(1px);
+    color : rgb(248, 248, 248 , 0.9);
+    border: 1px solid white;
+  }
+
+  /* create job model */
+    #createClassModal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:rgba(118, 105, 105 , .3);
+    backdrop-filter: blur(9px);
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    z-index: 1;
+    color: white;
+  }
+
+  /* Style for the overlay/background */
+  #modalOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+  /* Style for form fields */
+  #createClassForm label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  #createClassForm input,
+  #createClassForm textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+  }
+
+  /* Style for buttons */
+  #createClassForm button {
+    display: inline-block;
+    padding: 10px;
+    margin-right: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  #createClassForm button.cancel {
+    background-color: rgba(92, 90, 90, 0.5);
+    backdrop-filter: blur(1px);
+    border-radius: 10px;
+    border : 1px solid white;
+  }

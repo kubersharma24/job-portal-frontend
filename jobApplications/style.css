@@ -1,0 +1,147 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif; /* Optional: Adjust font family */
+    color: #333; /* Optional: Adjust text color */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Fixed background image */
+body {
+    background-image: url("https://wallpapers.com/images/featured/background-design-6tgpche84avnjqvz.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-clip: 10px; /* Apply blur effect */
+}
+
+/* Content wrapper */
+#mainDiv {
+    padding-top: 80px; /* Adjust according to header height */
+}
+
+/* Header */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px; /* Adjust height as needed */
+   
+    color: #fff; /* Header text color */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1000; /* Ensure header is above other content */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+}
+
+/* Application name */
+#appName {
+    font-size: 24px;
+}
+
+
+
+/* Username header */
+#usernameheader {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 60px; /* Adjust according to header height */
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: #fff;
+    backdrop-filter: blur(10px); /* Apply blur effect */
+}
+
+#mainDiv {
+    padding-top: 140px; /* Adjust according to header and username div height */
+}
+#userNamediv{
+    margin-top: 15px;
+}
+#logined-as{
+    margin-right: 30px;
+    margin-top: 15px;
+}
+
+/* Logout button */
+#logout {
+    cursor: pointer;
+    margin-right: 20px;
+    margin-left: auto;
+}
+/* Main body */
+#mainBody {
+    padding-top: 20px; /* Additional padding for spacing */
+}
+
+#backButton {
+    position: fixed;
+    top: 150px; /* Adjust according to header height */
+    left: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+    color: #333; /* Button text color */
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 999; /* Ensure the back button is above other content */
+}
+
+
+
+
+
+/* Center the table */
+#cardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     /* Adjust the height as needed */
+}
+
+/* Style the table */
+.application-table {
+    border-collapse: collapse;
+    width: 80%; /* Adjust the width as needed */
+    max-width: 600px; /* Limit the maximum width */
+    background-color: rgba(0, 0, 0, 0.1); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Apply blur effect *//* Background color of the table */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05); /* Shadow effect */
+}
+
+.application-table th, .application-table td {
+    padding: 10px;
+    text-align: center;
+}
+
+.application-table th {
+    background-color: #eee8e8; /* Header background color */
+    font-weight: bold;
+}
+
+.application-table td a {
+    color: #007bff; /* Link color */
+    text-decoration: none;
+}
+.application-table td{
+    color: #ffffff; /* Link color */
+    text-decoration: none;
+    
+}
+
+
+.application-table td a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+

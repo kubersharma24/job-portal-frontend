@@ -1,0 +1,44 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#mainDiv {
+    display: flex;
+    /* background-image: url("https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTB8fHxlbnwwfHx8fHw%3D"); */
+    background-image: url("https://wallpapers.com/images/featured/background-design-6tgpche84avnjqvz.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+#loginDiv{
+    padding: 20px; 
+    height: 320px;
+    width: 250px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: linear-gradient(to bottom, rgba(255, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
+    backdrop-filter: blur(10px);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#loginDiv input, #loginDiv button{
+    margin-bottom: 10px; /* Add margin bottom to create space between elements */
+}
+#loginDiv a {
+    font-size: small;
+}
+#loginDiv input{
+    border-radius: 5px;
+    font-size: 12px; /* Adjust font size as needed */
+    padding: 10px; /* Adjust padding as needed */
+    width: 85%;background: rgba(255, 255, 255, 0.5);
+    /* backdrop-filter: blur(px); */
+    border-radius: 5px;
+}

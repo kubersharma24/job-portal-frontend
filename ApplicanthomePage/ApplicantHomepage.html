@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="mainDiv">
+        <div id="header">
+            <div id="appName">DreamCatcher.com</div>
+            <div id="logout">
+                <a href="../login/index.html" style="color: white; text-decoration: none;" id="logout"> Logout </a>
+            </div>
+        </div>
+        <div id="usernameheader">
+            <div id="userNamediv"> <p id="Useranme"> User Name :</p> </div>
+            <div id="logined-as"> <p id="Applicant"> hey Applicant !</p> </div>
+        </div>
+        <div id="mainBody">
+            <div class="container">
+                <div class="content" id="cardContainer">
+                      <!-- Cards will be dynamically added here -->
+                </div>
+            </div>
+        </div>
+
+    <!--  -->
+    <div id="modalOverlay"></div>
+      <div id="createClassModal">
+          <p id="error-message" style="color: white;"></p>
+        <h2>Create New Job</h2>
+        <form id="createClassForm">
+      
+          <label for="description">Description:</label>
+          <textarea id="description" name="description" placeholder="Why should we hire you ?" required></textarea>
+            
+          <lable for="file">Add resume </lable>
+          <input type="file" name="resume" accept=".pdf,.doc,.docx" id="resume">
+        
+          <button type="button" id="submitCreateJob">submit</button>
+          <button type="button" class="cancel" id="closeCreateClassModal">Cancel</button>
+        </form>
+      </div>
+    <!--  -->
+
+</div>
+        <div id="pagination">
+            <button id="prevButton">Previous</button>
+            <span id="currentPage"></span>
+            <button id="nextButton">Next</button>
+        </div>
+    </div>
+</body>
+</html>

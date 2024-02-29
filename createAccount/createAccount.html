@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="createAccount.js"></script>
+</head>
+<body>
+    <div id="mainDiv">
+        <div id="loginDiv">
+                <h2>Create Account </h2 >
+                    <div id="radiodiv">
+                        
+                        <input type="radio" class="createAccount-input" name="userType" id="employer" value="EMPLOYER" required >
+                        <label for="employer">Employer</label>
+
+                        <input type="radio" class="createAccount-input" name="userType" id="applicant" value="APPLICANT" required>
+                        <label for="applicant">Applicant</label>
+                    </div>
+                    <div id ="namediv">
+                        <input type="text" class="createAccount-input" name="first-name" id="first-name" placeholder="first-name" required/>
+                        <input type="text" class="createAccount-input" name="last-name" id="last-name" placeholder="last-name" required/>
+                    </div>
+        
+                    <input type="email" class="createAccount-input" name="username" id="username" placeholder="user name" required/>
+                    <input type="password" class="createAccount-input" name="password" id="password" placeholder="password" required/>
+                     <input type="password" class="createAccount-input" name="password" id="confirm-password" placeholder="confirm password" required/>
+                
+                    <p id="error-message" style="color: white;"> </p>   
+                <button onclick="CreateAccount()">createAccount </button>
+                <a href="../login/index.html" style="text-decoration: none; color: aliceblue;">Already a user ?</a>
+        </div>
+    </div>
+</body>
+</html>
